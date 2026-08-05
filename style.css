@@ -1,0 +1,113 @@
+/* @media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+} */
+
+.navbar-collapse{
+    place-content: center flex-end;
+   
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1rem;
+}
+
+/* .navbar-brand{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+} */
+
+.navbar-toggler:focus{
+    box-shadow: 0 0;
+}
+
+.shadow{
+    --bs-box-shadow: 0 0.5rem 1rem rgb(231, 234, 231);
+}
+
+#homepage-cover{
+    padding-top: 120px;
+}
+
+.GillSans{
+    font-family: Gill Sans, sans-serif;
+}
+
+#storyBtn{
+    width: 30%;
+}
+
+.carousel-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* 保持圖片比例並填滿容器，超出部分會被裁切 */
+    object-position: center; /* 圖片置中對齊 */
+}
+
+#skillsImg{
+    width: 100%;
+    object-fit: cover; /* 保持圖片比例並填滿容器，超出部分會被裁切 */
+    object-position: center; /* 圖片置中對齊 */
+
+}
+
+.skillsChange{
+    height: 40px;
+    transition: 0.3s;
+}
+
+.skillsChangeShow{
+    height:100px;
+}
+
+.skillsText{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.skillsTextShow{
+    opacity: 1;
+}
+
+/* .nav-item{
+    transition: 0.1s ease-in-out;
+}
+
+.nav-item:hover{
+    border-bottom:1px dotted;
+} */
+
+
+
+/* https://www.fooish.com/css/scroll-animations.html */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+    /* clip-path: inset(45% 20% 45% 20%); */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    /* clip-path: inset(0% 0% 0% 0%); */
+  }
+}
+
+.reveal {
+  animation: reveal ease-in both;
+  animation-timeline: view();
+  /* 定義動畫在元素進入 25% 到進入 75% 之間執行 */
+  animation-range: entry 10% entry 75%;
+}
+
+
+.portfolioModalDialog{
+    max-width: 90%;
+}
+
+.portfolioModalImg{
+    width: 100%;
+    object-fit: cover; /* 保持圖片比例並填滿容器，超出部分會被裁切 */
+    object-position: center; /* 圖片置中對齊 */
+}
